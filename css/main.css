@@ -816,6 +816,13 @@ header button:hover .iconify path, header button:focus .iconify path, header but
   border-radius: 25px;
   margin: 15px;
   padding: 15px;
+  opacity: 0;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: dashboard-filling;
+          animation-name: dashboard-filling;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 .dashboard__header {
@@ -834,10 +841,10 @@ header button:hover .iconify path, header button:focus .iconify path, header but
           animation-fill-mode: forwards;
   -webkit-animation-name: fade-to-right;
           animation-name: fade-to-right;
-  -webkit-animation-duration: .5s;
-          animation-duration: .5s;
-  -webkit-animation-delay: calc(.5s + (0.25s * var(--order)));
-          animation-delay: calc(.5s + (0.25s * var(--order)));
+  -webkit-animation-duration: .8s;
+          animation-duration: .8s;
+  -webkit-animation-delay: calc(.8s + (0.25s * var(--order)));
+          animation-delay: calc(.8s + (0.25s * var(--order)));
 }
 
 .dashboard__subtitle {
@@ -848,14 +855,14 @@ header button:hover .iconify path, header button:focus .iconify path, header but
   opacity: 0;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-duration: .5s;
-          animation-duration: .5s;
+  -webkit-animation-duration: .8s;
+          animation-duration: .8s;
   -webkit-animation-delay: 0.1 0.3s;
           animation-delay: 0.1 0.3s;
   -webkit-animation-name: fade-to-left;
           animation-name: fade-to-left;
-  -webkit-animation-delay: calc(.5s + (0.25s * var(--order)));
-          animation-delay: calc(.5s + (0.25s * var(--order)));
+  -webkit-animation-delay: calc(.8s + (0.25s * var(--order)));
+          animation-delay: calc(.8s + (0.25s * var(--order)));
 }
 
 .dashboard__inner-wrapper {
@@ -876,10 +883,10 @@ header button:hover .iconify path, header button:focus .iconify path, header but
   opacity: 0;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-duration: .5s;
-          animation-duration: .5s;
-  -webkit-animation-delay: calc(.5s + (0.25s * var(--order)));
-          animation-delay: calc(.5s + (0.25s * var(--order)));
+  -webkit-animation-duration: .8s;
+          animation-duration: .8s;
+  -webkit-animation-delay: calc(.8s + (0.25s * var(--order)));
+          animation-delay: calc(.8s + (0.25s * var(--order)));
 }
 
 .dashboard__portfolio {
@@ -941,6 +948,38 @@ header button:hover .iconify path, header button:focus .iconify path, header but
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+@-webkit-keyframes dashboard-filling {
+  0% {
+    border-radius: 200px;
+    max-width: 100px;
+    max-width: 100px;
+  }
+  50% {
+    opacity: 1;
+    max-width: 100%;
+  }
+  100% {
+    opacity: 1;
+    max-width: 100%;
+  }
+}
+
+@keyframes dashboard-filling {
+  0% {
+    border-radius: 200px;
+    max-width: 100px;
+    max-width: 100px;
+  }
+  50% {
+    opacity: 1;
+    max-width: 100%;
+  }
+  100% {
+    opacity: 1;
+    max-width: 100%;
+  }
 }
 
 @-webkit-keyframes pop-item {

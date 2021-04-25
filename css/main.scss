@@ -690,11 +690,14 @@ header {
 }
 
 .dashboard {
-    
     background: white;
     border-radius: 25px;
     margin: 15px;
     padding: 15px;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: dashboard-filling;
+    animation-duration: 1s;
 
     &__header {
         display: flex;
@@ -706,8 +709,8 @@ header {
         opacity: 0;
         animation-fill-mode: forwards;
         animation-name: fade-to-right;
-        animation-duration: .5s;
-        animation-delay: calc(.5s + (0.25s * var(--order)));
+        animation-duration: .8s;
+        animation-delay: calc(.8s + (0.25s * var(--order)));
     }
 
     &__subtitle {
@@ -720,10 +723,10 @@ header {
         &__info {
             opacity: 0;
             animation-fill-mode: forwards;
-            animation-duration: .5s;
+            animation-duration: .8s;
             animation-delay: .1.3s;
             animation-name: fade-to-left;
-            animation-delay: calc(.5s + (0.25s * var(--order)));    
+            animation-delay: calc(.8s + (0.25s * var(--order)));    
         }
     }
 
@@ -738,8 +741,8 @@ header {
         > * {
             opacity: 0;
             animation-fill-mode: forwards;
-            animation-duration: .5s;
-            animation-delay: calc(.5s + (0.25s * var(--order)));
+            animation-duration: .8s;
+            animation-delay: calc(.8s + (0.25s * var(--order)));
 
         }
     }
@@ -788,6 +791,23 @@ header {
 
 }
 
+@keyframes dashboard-filling {
+    0% {
+        border-radius: 200px;
+        max-width: 100px;
+        max-width: 100px;
+    }
+
+    50% {
+        opacity: 1;
+        max-width: 100%;
+    }
+
+    100% {
+        opacity: 1;
+        max-width: 100%;
+    }
+}
 
 @keyframes pop-item {
     from {
