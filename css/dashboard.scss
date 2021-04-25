@@ -1,0 +1,13 @@
+@use 'main';
+
+.dashboard {
+    &__header {
+        @extend .grand-title;
+    }
+    &__title {
+
+    }
+    &__subtitle {
+
+    }
+}

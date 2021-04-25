@@ -1,0 +1,51 @@
+.select {
+    position: relative;
+    display: inline-block;
+}    .select select {
+        display: inline-block;
+        width: 100%;
+        cursor: pointer;
+        padding: 10px 15px;
+        padding-right: 30px;
+        outline: 0;
+        border: 1px solid var(--light-gray);
+        border-radius: 100px;
+        background: white;
+        color: var(--black-blue);
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+        .select select::-ms-expand {
+            display: none;
+        }
+        .select select:hover,
+        .select select:focus {
+            color: var(--black-blue);
+            background: white;
+        }
+        .select select:disabled {
+            opacity: 0.3;
+            pointer-events: none;
+        }
+.select_arrow {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    width: 5px;
+    height: 5px;
+    border: solid var(--medium-gray);;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg) translateY(-50%);
+    -webkit-transform: rotate(45deg) translateY(-50%);
+}
+.select select:hover ~ .select_arrow,
+.select select:focus ~ .select_arrow {
+    border-color: var(--medium-gray);
+}
+
+.select select:disabled ~ .select_arrow {
+    border-top-color: var(--medium-gray);
+}

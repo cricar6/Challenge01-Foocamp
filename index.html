@@ -1,0 +1,381 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 01 - FooCamp</title>
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/select.css">
+
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <span class="iconify icon-placeholder" data-inline="false" data-icon="radix-icons:component-placeholder"></span>
+        </div>
+
+        <nav class="navigation">
+            <ul class="navigation__container">
+                <li class="navigation__item" style="--order: 1;">
+                    <button href="#">
+                        <span class="iconify" data-inline="false" data-icon="mdi:view-dashboard-outline"></span>
+                    </button>
+                </li>
+                <li class="navigation__item" style="--order: 2;">
+                    <button href="#">
+                        <span class="iconify" data-inline="false" data-icon="mdi:wallet-outline"></span>
+                    </button>
+                </li>
+                <li class="navigation__item" style="--order: 3;">
+                    <button href="#">
+                        <span class="iconify" data-inline="false" data-icon="mdi:cube-outline"></span>
+                    </button>
+                </li>
+                <li class="navigation__item" style="--order: 4;">
+                    <button href="#">
+                        <span class="iconify" data-inline="false" data-icon="uil:graph-bar"></span>
+                    </button>
+                </li>
+                <li class="navigation__item" style="--order: 5;">
+                    <button href="#">
+                        <span class="iconify" data-inline="false" data-icon="mdi:account-outline"></span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+        <button class="navigation__item" id="logout">
+            <span class="iconify" data-inline="false" data-icon="mdi:logout-variant"></span>
+        </button>
+    </header>
+
+    <main class="dashboard">
+        <section class="dashboard__header">
+            <h1 class="dashboard__title" style="--order: 1;">Overview</h1>
+            <article class="account-toolbar">
+                <section class="account-toolbar__actions-container">
+                    <button class="account-toolbar__action" style="--order: 3;">
+                        <span class="iconify" data-inline="false" data-icon="mdi:magnify"></span>
+                    </button>
+                    <button id="notification-toogler" class="account-toolbar__action" style="--order: 2;">
+                        <span class="iconify" data-inline="false" data-icon="mdi:bell-outline"></span>
+                    </button>
+                </section>
+                <section class="account-toolbar__info" style="--order: 1;">
+                    <div class="account-toolbar__photo">
+                        <span class="iconify icon-placeholder" data-inline="false" data-icon="radix-icons:component-placeholder"></span>
+                    </div>
+                    <div class="account-toolbar__name">Zaia M.</div>
+                    <button class="account-toolbar__toogler">
+                        <span class="iconify" data-inline="false" data-icon="mdi:chevron-down"></span>
+                    </button>
+                </section>
+            </article>
+        </section>
+
+        <section class="dashboard__inner-wrapper">
+            <section class="dashboard__portfolio" style="--order: 3;">
+                <h2 class="dashboard__subtitle">
+                    Portfolio
+                </h2>
+                <article class="portfolio-balance">
+                    <section class="portfolio-balance__header">
+                        <h3 class="portfolio-balance__balance">$ 17 643.41</h3>
+                        <button class="portfolio-balance__menu">
+                            <span class="iconify" data-inline="false" data-icon="bx:bx-dots-vertical-rounded"></span>
+                        </button>
+                    </section>
+            
+                    <p class="portfolio-balance__label">Porfolio balance</p>
+            
+                    <section class="portfolio-balance__graph">
+                        <button class="portfolio-balance__dot-container">
+                            <div class="portfolio-balance__dot"></div>
+                        </button>
+                        <button class="portfolio-balance__dot-container">
+                            <div class="portfolio-balance__dot"></div>
+                        </button>
+                        <button class="portfolio-balance__dot-container">
+                            <div class="portfolio-balance__dot"></div>
+                        </button>
+                        <button class="portfolio-balance__dot-container">
+                            <div class="portfolio-balance__dot"></div>
+                        </button>
+                        <button class="portfolio-balance__dot-container">
+                            <div class="portfolio-balance__dot"></div>
+                        </button>
+                        <button class="portfolio-balance__dot-container">
+                            <div class="portfolio-balance__dot"></div>
+                        </button>
+                        <button class="portfolio-balance__dot-container">
+                            <div class="portfolio-balance__dot"></div>
+                        </button>
+                        <button class="portfolio-balance__dot-container">
+                            <div class="portfolio-balance__dot"></div>
+                        </button>
+                        <button class="portfolio-balance__dot-container">
+                            <div class="portfolio-balance__dot"></div>
+                        </button>
+                        <button class="portfolio-balance__dot-container">
+                            <div class="portfolio-balance__dot"></div>
+                        </button>
+                        <button class="portfolio-balance__dot-container">
+                            <div class="portfolio-balance__dot"></div>
+                        </button>
+                        <button class="portfolio-balance__dot-container">
+                            <div class="portfolio-balance__dot"></div>
+                        </button>
+                        <button class="portfolio-balance__dot-container">
+                            <div class="portfolio-balance__dot"></div>
+                        </button>
+                        <button class="portfolio-balance__dot-container">
+                            <div class="portfolio-balance__dot"></div>
+                        </button>
+                        <button class="portfolio-balance__dot-container">
+                            <div class="portfolio-balance__dot"></div>
+                        </button>
+                        <button class="portfolio-balance__dot-container">
+                            <div class="portfolio-balance__dot">
+                                <div class="portfolio-balance__dot-tooltip">
+                                    <div class="portfolio-balance__dot-tooltip-content">
+                                        $27 482.00
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                        <button class="portfolio-balance__dot-container">
+                            <div class="portfolio-balance__dot"></div>
+                        </button>
+                        <button class="portfolio-balance__dot-container">
+                            <div class="portfolio-balance__dot"></div>
+                        </button>
+                        <button class="portfolio-balance__dot-container">
+                            <div class="portfolio-balance__dot"></div>
+                        </button>
+                    </section>
+            
+            
+            
+                    <section class="portfolio-balance__navigation">
+                        <button class="portfolio-balance__navigation-content">1h</button>
+                        <button class="portfolio-balance__navigation-content">24h</button>
+                        <button class="portfolio-balance__navigation-content">1w</button>
+                        <button class="portfolio-balance__navigation-content">1m</button>
+                        <button class="portfolio-balance__navigation-content">1y</button>
+                        <button class="portfolio-balance__navigation-content">all</button>
+                    </section>
+                </article>
+            </section>
+
+            <section class="dashboard__assets" style="--order: 4;">
+                <h2 class="dashboard__subtitle">
+                    Your assets
+                </h2>
+                <div class="dashboard__assets-inner-wrapper">
+                    <article class="asset asset--violet">
+                        <section class="asset__header">
+                            <h3 class="asset__title">1.25 BTC</h3>
+                            <button class="asset__menu">
+                                <span class="iconify" data-inline="false" data-icon="bx:bx-dots-vertical-rounded"></span>
+                            </button>
+                        </section>
+                        <p class="asset__price">$ 2948.04</p>
+                
+                        <section class="asset__detail">
+                            <div class="asset__icon">
+                                <span class="iconify icon-placeholder" data-inline="false" data-icon="radix-icons:component-placeholder"></span>
+                            </div>
+                
+                            <p class="asset__increment">
+                                + 0.27%
+                            </p>
+                        </section>
+                    </article>
+                
+                    <article class="asset asset--green">
+                        <section class="asset__header">
+                            <h3 class="asset__title">0.32 LTC</h3>
+                            <div class="asset__menu">
+                                <span class="iconify" data-inline="false" data-icon="bx:bx-dots-vertical-rounded"></span>
+                            </div>
+                        </section>
+                        <p class="asset__price">$ 2948.04</p>
+                
+                        <section class="asset__detail">
+                            <div class="asset__icon">
+                                <span class="iconify icon-placeholder" data-inline="false" data-icon="radix-icons:component-placeholder"></span>
+                            </div>
+                
+                            <p class="asset__increment">
+                                + 0.31%
+                            </p>
+                        </section>
+                    </article>
+                
+                    <article class="asset asset--yellow">
+                        <section class="asset__header">
+                            <h3 class="asset__title">1.25 ETH</h3>
+                            <div class="asset__menu">
+                                <span class="iconify" data-inline="false" data-icon="bx:bx-dots-vertical-rounded"></span>
+                            </div>
+                        </section>
+                        <p class="asset__price">$ 2948.04</p>
+                
+                        <section class="asset__detail">
+                            <div class="asset__icon">
+                                <span class="iconify icon-placeholder" data-inline="false" data-icon="radix-icons:component-placeholder"></span>
+                            </div>
+                
+                            <p class="asset__increment">
+                                + 0.27%
+                            </p>
+                        </section>
+                    </article>
+                </div>
+            </section>
+
+            <section class="dashboard__market" style="--order: 5;">
+                <section class="dashboard__market-header">
+                    <h3 class="dashboard__market-title">Market is down 0.80%</h3>
+                    <section class="dashboard__market-toolbar">
+                        <form action="">
+                            <div class="select">
+                                <select>
+                                    <option value="hour">1h</option>
+                                    <option value="day">24h</option>
+                                    <option value="week">1w</option>
+                                    <option value="month">1m</option>
+                                    <option value="year">1y</option>
+                                    <option value="all">All</option>
+                                </select>
+                                <div class="select_arrow">
+                                </div>
+                            </div>
+                            <div class="select">
+                                <select>
+                                    <option value="top">Top gainers</option>
+                                    <option value="relevance">Relevance</option>
+                                </select>
+                                <div class="select_arrow">
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                </section>
+                <article class="market-table">
+                    <section class="market-table__header">
+                        <p class="market-table__title market-table__title--info">Name</p>
+                        <p class="market-table__title market-table__title--indicator">Price</p>
+                        <p class="market-table__title market-table__title--indicator">Chanee</p>
+                        <p class="market-table__title market-table__title--indicator">Market Cap</p>
+                        <p class="market-table__title market-table__title--watch">Watch</p>
+                    </section>
+                    <section class="market-table__content">
+                        <section class="market-table__item">
+                            <div class="market-table__item-content market-table__item-content--info">
+                                <div class="market-table__item-icon">
+                                    <span class="iconify icon-placeholder" data-inline="false" data-icon="radix-icons:component-placeholder"></span>
+                                </div>
+                                <div class="market-table__item-details">
+                                    <div class="market-table__item-name">Band Protocol</div>
+                                    <div class="market-table__item-brand">Band</div>
+                                </div>
+                            </div>
+                            <div class="market-table__item-content market-table__item-content--indicator"><span>$2.42</span></div>
+                            <div class="market-table__item-content market-table__item-content--indicator"><span style="color: var(--green)">+13.38%</span></div>
+                            <div class="market-table__item-content market-table__item-content--indicator"><span>$399.8M</span></div>
+                            <button class="market-table__item-content market-table__item-content--watch">
+                                <span class="iconify" data-inline="false" data-icon="ant-design:star-outlined"></span>
+                            </button>
+                        </section>
+                        
+                        <section class="market-table__item">
+                            <div class="market-table__item-content market-table__item-content--info">
+                                <div class="market-table__item-icon">
+                                    <span class="iconify icon-placeholder" data-inline="false" data-icon="radix-icons:component-placeholder"></span>
+                                </div>
+                                <div class="market-table__item-details">
+                                    <div class="market-table__item-name">VeChain</div>
+                                    <div class="market-table__item-brand">VET</div>
+                                </div>
+                            </div>
+                            <div class="market-table__item-content market-table__item-content--indicator"><span>$7.48</span></div>
+                            <div class="market-table__item-content market-table__item-content--indicator"><span style="color: var(--green)">+11.19%</span></div>
+                            <div class="market-table__item-content market-table__item-content--indicator"><span>$152.5M</span></div>
+                            <button class="market-table__item-content market-table__item-content--watch">
+                                <span class="iconify" data-inline="false" data-icon="ant-design:star-outlined"></span>
+                            </button>
+                        </section>
+            
+                        <section class="market-table__item">
+                            <div class="market-table__item-content market-table__item-content--info">
+                                <div class="market-table__item-icon">
+                                    <span class="iconify icon-placeholder" data-inline="false" data-icon="radix-icons:component-placeholder"></span>
+                                </div>
+                                <div class="market-table__item-details">
+                                    <div class="market-table__item-name">Aave</div>
+                                    <div class="market-table__item-brand">AAVE</div>
+                                </div>
+                            </div>
+                            <div class="market-table__item-content market-table__item-content--indicator"><span>$0.0184</span></div>
+                            <div class="market-table__item-content market-table__item-content--indicator"><span style="color: var(--green)">+7.57%</span></div>
+                            <div class="market-table__item-content market-table__item-content--indicator"><span>$1.2B</span></div>
+                            <button class="market-table__item-content market-table__item-content--watch">
+                                <span class="iconify" data-inline="false" data-icon="ant-design:star-outlined"></span>
+                            </button>
+                        </section>
+            
+                        <section class="market-table__item">
+                            <div class="market-table__item-content market-table__item-content--info">
+                                <div class="market-table__item-icon">
+                                    <span class="iconify icon-placeholder" data-inline="false" data-icon="radix-icons:component-placeholder"></span>
+                                </div>
+                                <div class="market-table__item-details">
+                                    <div class="market-table__item-name">Waves</div>
+                                    <div class="market-table__item-brand">WAVES</div>
+                                </div>
+                            </div>
+                            <div class="market-table__item-content market-table__item-content--indicator"><span>$30.68</span></div>
+                            <div class="market-table__item-content market-table__item-content--indicator"><span style="color: var(--green)">+6.80%</span></div>
+                            <div class="market-table__item-content market-table__item-content--indicator"><span>$399.8M</span></div>
+                            <button class="market-table__item-content market-table__item-content--watch">
+                                <span class="iconify" data-inline="false" data-icon="ant-design:star-outlined"></span>
+                            </button>
+                        </section>
+                        
+                    </section>
+                </article>
+            </section>
+
+            <article class="banner-promo" style="--order: 6;">
+                <section class="banner-promo__content">
+                    <div class="banner-promo__title">
+                        <div class="banner-promo__title-first-line">
+                            <p>Earn</p>
+                            <div class="banner-promo__title-highlight">
+                                <p>free</p>
+                            </div>
+                            <p>crypto</p>
+                        </div>
+                        <div class="banner-promo__title-second-line">
+                            <p>with Coinview Earn!</p>
+                        </div>
+                    </div>
+                    <div class="banner-promo__text">
+                        <p>Learn about different cryptocurrencies and earn them for free!</p>
+                    </div>
+                </section>
+        
+                <button class="primary-button">
+                    <span class="primary-button__content">
+                        Earn now
+                    </span>
+                </button>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
